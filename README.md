@@ -1,11 +1,8 @@
 # testcafe-reporter-lambdatest
 [![Build Status](https://travis-ci.org/Shahnawaz-Sk/testcafe-reporter-lambdatest.svg)](https://travis-ci.org/Shahnawaz-Sk/testcafe-reporter-lambdatest)
 
-This is the **lambdatest** reporter plugin for [TestCafe](http://devexpress.github.io/testcafe).
+This is the **LambdaTest** reporter plugin for [TestCafe](http://devexpress.github.io/testcafe).
 
-<p align="center">
-    <img src="https://raw.github.com/Shahnawaz-Sk/testcafe-reporter-lambdatest/master/media/preview.png" alt="preview" />
-</p>
 
 ## Install
 
