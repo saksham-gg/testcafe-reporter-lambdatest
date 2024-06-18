@@ -1,6 +1,6 @@
 {
   "name": "testcafe-reporter-lambdatest",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "LambdaTest TestCafe Reporter plugin.",
   "repository": "https://github.com/LambdaTest/testcafe-reporter-lambdatest",
   "author": "LambdaTest <keys@lambdatest.com>",
