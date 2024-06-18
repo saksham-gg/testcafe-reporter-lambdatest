@@ -29,14 +29,6 @@ export default function () {
         },
 
         async reportTestDone (name) {
-            try {
-                await updateSessionName(this.sessions, name);
-            } 
-            catch (error) {
-                this.write(`Error updating session name: ${error.message}`)
-                    .newline();
-            }
-
             this.write('Test is completed: ');
             this.write(name)
                 .newline();
@@ -59,6 +51,19 @@ export default function () {
         async reportTestStart (name, meta, testStartInfo) {
             this.write(`Starting test at ${testStartInfo.startTime.toLocaleTimeString()}: ${name} (${meta.severity})`) 
                 .newline(); 
+
+            if(this.sessions.length > 0) {
+                try {
+                    this.write('Updating session name...')
+                        .newline();
+                    updateSessionName(this.sessions[0], name);
+                    this.sessions.shift();
+                } 
+                catch (error) {
+                    this.write(`Error updating session name: ${error.message}`)
+                        .newline();
+                }
+            }
         }
 
     };
