@@ -52,7 +52,7 @@ export default function () {
             this.write(`Starting test at ${testStartInfo.startTime.toLocaleTimeString()}: ${name} (${meta.severity})`) 
                 .newline(); 
 
-            if(this.sessions.length > 0) {
+            if (this.sessions.length > 0) {
                 try {
                     this.write('Updating session name...')
                         .newline();
